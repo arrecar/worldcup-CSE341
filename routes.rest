@@ -3,7 +3,7 @@
 GET http://localhost:8080/groups 
 
 ### Get by ID
-GET http://localhost:8080/groups/63362d04279ced902f21d823
+GET http://localhost:8080/groups/63362e49279ced902f21d832
 
 ### Create group 
 POST http://localhost:8080/groups HTTP/1.1 
@@ -18,7 +18,7 @@ content-type: application/json
 }
 
 ### Update group 
-PUT http://localhost:8080/groups/632bad9585885c4e58967aaa HTTP/1.1 
+PUT http://localhost:8080/groups/63362e9664e7757949cb398e HTTP/1.1 
 content-type: application/json
 
 {
@@ -29,7 +29,7 @@ content-type: application/json
 "team4": "test222"
 } 
 ### DELETE group 
-DELETE http://localhost:8080/groups/632bad9585885c4e58967aaa HTTP/1.1
+DELETE http://localhost:8080/groups/63362e9664e7757949cb398e HTTP/1.1
 
 
 
