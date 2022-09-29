@@ -1,0 +1,10 @@
+[
+    {"name": "Group A","team1":"Qatar", "team2": "Ecuador", "Team3": "Senegal", "Team4": "Netherlands"},
+    {"name": "Group B","team1":"England", "team2": "IR Iran", "Team3": "USA", "Team4": "Wales"},
+    {"name": "Group C","team1":"Argentina", "team2": "Saudi Arabia", "Team3": "Mexico", "Team4": "Poland"},
+    {"name": "Group D","team1":"France", "team2": "Australia", "Team3": "Denmark", "Team4": "Tunisia"},
+    {"name": "Group E","team1":"Spain", "team2": "Costa Rica", "Team3": "Germany", "Team4": "Japan"},
+    {"name": "Group F","team1":"Belgium", "team2": "Canada", "Team3": "Morocco", "Team4": "Croatia"},
+    {"name": "Group G","team1":"Brazil", "team2": "Serbia", "Team3": "Switzerland", "Team4": "Cameroon"},
+    {"name": "Group H","team1":"Portugal", "team2": "Ghana", "Team3": "Uruguay", "Team4": "Korea Republic"}
+]
