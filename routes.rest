@@ -3,32 +3,32 @@
 GET http://localhost:8080/groups 
 
 ### Get by ID
-GET http://localhost:8080/groups/6326370ec8992a22706e79e2 
+GET http://localhost:8080/groups/63362d04279ced902f21d823
 
-### Create contact 
+### Create group 
 POST http://localhost:8080/groups HTTP/1.1 
 content-type: application/json
 
 {
-"firstName":"Ashley", 
-"lastName":"Weaver", 
-"email":"aWeaver@test.com", 
-"favoriteColor":"Brown", 
-"birthday":"06/19/2000"
+"name": "Group z",
+"team1": "test",
+"team2": "test",
+"team3": "test",
+"team4": "test"
 }
 
-### Update contact 
+### Update group 
 PUT http://localhost:8080/groups/632bad9585885c4e58967aaa HTTP/1.1 
 content-type: application/json
 
 {
-"firstName":"Sarah", 
-"lastName":"Birch", 
-"email":"test@gmail.com", 
-"favoriteColor":"Green", 
-"birthday":"12/12/20"
+"name": "Group zzz",
+"team1": "test",
+"team2": "test",
+"team3": "test",
+"team4": "test222"
 } 
-### DELETE contact 
+### DELETE group 
 DELETE http://localhost:8080/groups/632bad9585885c4e58967aaa HTTP/1.1
 
 
@@ -40,29 +40,29 @@ GET https://cse341personal2.onrender.com/groups
 ### Get by id
 GET https://cse341personal2.onrender.com/groups/6326370ec8992a22706e79e2 
 
-### Create contact 
+### Create group 
 POST https://cse341personal2.onrender.com/groups HTTP/1.1 
 content-type: application/json
 
 {
-"firstName":"Ashley", 
-"lastName":"Weaver", 
-"email":"aWeaver@test.com", 
-"favoriteColor":"Brown", 
-"birthday":"06/19/2000"
+"name": "Group z",
+"team1": "test",
+"team2": "test",
+"team3": "test",
+"team4": "test"
 }
 
-### Update contact 
+### Update group 
 PUT https://cse341personal2.onrender.com/groups/632badeb167a80040175690a HTTP/1.1 
 content-type: application/json
 
 {
-"firstName":"Sarah", 
-"lastName":"Birch", 
-"email":"sarahB@gmail.com", 
-"favoriteColor":"Yellow", 
-"birthday":"06/12/20"
+"name": "Group zzzz",
+"team1": "test",
+"team2": "test",
+"team3": "test",
+"team4": "test2222"
 }
 
-### DELETE contact 
+### DELETE group 
 DELETE https://cse341personal2.onrender.com/groups/632badeb167a80040175690a HTTP/1.1
