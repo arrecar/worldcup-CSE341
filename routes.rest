@@ -1,12 +1,12 @@
 // LOCALHOST 
 ### Get all
-GET http://localhost:8080/contacts 
+GET http://localhost:8080/groups 
 
 ### Get by ID
-GET http://localhost:8080/contacts/6326370ec8992a22706e79e2 
+GET http://localhost:8080/groups/6326370ec8992a22706e79e2 
 
 ### Create contact 
-POST http://localhost:8080/contacts HTTP/1.1 
+POST http://localhost:8080/groups HTTP/1.1 
 content-type: application/json
 
 {
@@ -18,7 +18,7 @@ content-type: application/json
 }
 
 ### Update contact 
-PUT http://localhost:8080/contacts/632bad9585885c4e58967aaa HTTP/1.1 
+PUT http://localhost:8080/groups/632bad9585885c4e58967aaa HTTP/1.1 
 content-type: application/json
 
 {
@@ -29,19 +29,19 @@ content-type: application/json
 "birthday":"12/12/20"
 } 
 ### DELETE contact 
-DELETE http://localhost:8080/contacts/632bad9585885c4e58967aaa HTTP/1.1
+DELETE http://localhost:8080/groups/632bad9585885c4e58967aaa HTTP/1.1
 
 
 
 // PRODUCTION DEPLOY/// 
 ### Get all
-GET https://cse341personal2.onrender.com/contacts 
+GET https://cse341personal2.onrender.com/groups 
 
 ### Get by id
-GET https://cse341personal2.onrender.com/contacts/6326370ec8992a22706e79e2 
+GET https://cse341personal2.onrender.com/groups/6326370ec8992a22706e79e2 
 
 ### Create contact 
-POST https://cse341personal2.onrender.com/contacts HTTP/1.1 
+POST https://cse341personal2.onrender.com/groups HTTP/1.1 
 content-type: application/json
 
 {
@@ -53,7 +53,7 @@ content-type: application/json
 }
 
 ### Update contact 
-PUT https://cse341personal2.onrender.com/contacts/632badeb167a80040175690a HTTP/1.1 
+PUT https://cse341personal2.onrender.com/groups/632badeb167a80040175690a HTTP/1.1 
 content-type: application/json
 
 {
@@ -65,4 +65,4 @@ content-type: application/json
 }
 
 ### DELETE contact 
-DELETE https://cse341personal2.onrender.com/contacts/632badeb167a80040175690a HTTP/1.1
+DELETE https://cse341personal2.onrender.com/groups/632badeb167a80040175690a HTTP/1.1

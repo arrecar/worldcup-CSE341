@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const contactsController = require('../controllers/contacts');
+const groupsController = require('../controllers/groups');
 
 //Get all groups
 router.get('/', groupsController.getAll);
