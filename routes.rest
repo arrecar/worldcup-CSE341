@@ -17,7 +17,7 @@ content-type: application/json
 "team4": "test"
 }
 
-### Update group 
+### Update group
 PUT http://localhost:8080/groups/63362e9664e7757949cb398e HTTP/1.1 
 content-type: application/json
 
@@ -34,14 +34,14 @@ DELETE http://localhost:8080/groups/63362e9664e7757949cb398e HTTP/1.1
 
 
 // PRODUCTION DEPLOY/// 
-### Get all
-GET https://cse341personal2.onrender.com/groups 
+### Get all 
+GET https://carlosworldcup2022.onrender.com/groups 
 
 ### Get by id
-GET https://cse341personal2.onrender.com/groups/6326370ec8992a22706e79e2 
+GET https://carlosworldcup2022.onrender.com/groups/63362e49279ced902f21d832
 
 ### Create group 
-POST https://cse341personal2.onrender.com/groups HTTP/1.1 
+POST https://carlosworldcup2022.onrender.com/groups HTTP/1.1 
 content-type: application/json
 
 {
@@ -53,7 +53,7 @@ content-type: application/json
 }
 
 ### Update group 
-PUT https://cse341personal2.onrender.com/groups/632badeb167a80040175690a HTTP/1.1 
+PUT https://carlosworldcup2022.onrender.com/groups/633635788124bf34ee53ebb2 HTTP/1.1 
 content-type: application/json
 
 {
@@ -65,4 +65,4 @@ content-type: application/json
 }
 
 ### DELETE group 
-DELETE https://cse341personal2.onrender.com/groups/632badeb167a80040175690a HTTP/1.1
+DELETE https://carlosworldcup2022.onrender.com/groups/633635788124bf34ee53ebb2 HTTP/1.1

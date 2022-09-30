@@ -2,8 +2,8 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
   info: {
-    title: 'My API',
-    description: 'Contacts API'
+    title: 'World Cup 2022',
+    description: 'World Cup 2022 API'
   },
   host: 'carlosworldcup2022.onrender.com',
   schemes: ['https']

@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "My API",
-    "description": "Contacts API",
+    "title": "World Cup 2022",
+    "description": "World Cup 2022 API",
     "version": "1.0.0"
   },
   "host": "carlosworldcup2022.onrender.com",
