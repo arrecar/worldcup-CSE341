@@ -1,24 +1,37 @@
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
-const getAll = async (req, res, next) => {
+const getAll = (req, res) => {
   // #swagger.description = 'Get a list of all groups'
-  const result = await mongodb.getDb().db().collection('groups').find();
-  result.toArray().then((lists) => {
-    res.setHeader('Content-Type', 'application/json');
-    res.status(200).json(lists);
-  });
-};
-
-const getSingle = async (req, res, next) => {
-  // #swagger.description = 'Get a single group'
-  const userId = new ObjectId(req.params.id);
-  const result = await mongodb
+  mongodb
     .getDb()
     .db()
     .collection('groups')
-    .find({ _id: userId });
-  result.toArray().then((lists) => {
+    .find()
+    .toArray((err, lists) => {
+      if (err) {
+        res.status(400).json({ message: err });
+      }
+      res.setHeader('Content-Type', 'application/json');
+      res.status(200).json(lists);
+  });
+};
+
+const getSingle = (req, res) => {
+  // #swagger.description = 'Get a single group'
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid group id to find a group.');
+  }
+  const userId = new ObjectId(req.params.id);
+  mongodb
+    .getDb()
+    .db()
+    .collection('groups')
+    .find({ _id: userId })
+    .toArray((err, lists) =>{
+      if (err) {
+        res.status(400).json({ message: err });
+      }
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists[0]);
   });
