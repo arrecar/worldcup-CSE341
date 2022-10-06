@@ -4,7 +4,7 @@ const saveGroup = (req, res, next) => {
     const validationRule = {
         name: 'required|string',
         team1: 'required|string',
-        team2: 'required|email',
+        team2: 'required|string',
         team3: 'required|string',
         team4: 'required|string'
     };
