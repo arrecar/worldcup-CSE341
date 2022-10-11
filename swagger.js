@@ -5,7 +5,7 @@ const doc = {
     title: 'Soccer World Cup 2022 Qatar',
     description: 'World Cup 2022 API'
   },
-  host: 'carlosworldcup2022.onrender.com',
+  host: 'https://carlosworldcup2022.onrender.com',
   schemes: ['https']
 };
 

@@ -23,13 +23,12 @@ router.get('/', groupsController.getAll);
 router.get('/:id', groupsController.getSingle);
 
 //Create a group
-router.post('/', requiresAuth(), (req, res) =>
-    res.render('', validation.saveGroup, groupsController.createGroup));
+router.post('/', requiresAuth(), validation.saveGroup, groupsController.createGroup);
 
 //Update group based on ID
-router.put('/:id', validation.saveGroup, groupsController.updateGroup);
+router.put('/:id', requiresAuth(), validation.saveGroup, groupsController.updateGroup);
 
 //Delete group by ID
-router.delete('/:id', groupsController.deleteGroup);
+router.delete('/:id', requiresAuth(), groupsController.deleteGroup);
 
 module.exports = router;
