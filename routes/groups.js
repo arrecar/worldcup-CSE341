@@ -24,7 +24,7 @@ router.get('/:id', groupsController.getSingle);
 
 //Create a group
 router.post('/', requiresAuth(), (req, res) =>
-    validation.saveGroup, groupsController.createGroup);
+    res.post(validation.saveGroup, groupsController.createGroup));
 
 //Update group based on ID
 router.put('/:id', validation.saveGroup, groupsController.updateGroup);
