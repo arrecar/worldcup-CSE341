@@ -5,7 +5,7 @@
     "description": "World Cup 2022 API",
     "version": "1.0.0"
   },
-  "host": "https://carlosworldcup2022.onrender.com",
+  "host": "carlosworldcup2022.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
